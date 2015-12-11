@@ -9,6 +9,27 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+    @IBOutlet var myLabel: UILabel!
+    @IBOutlet var firstTextField: UITextField!
+    
+    @IBAction func helloWorld() {
+        myLabel.text = "Hello World!"
+        firstTextField.text = "Owen"
+    }
+    
+    @IBAction func anotherAction() {
+        
+    }
+    
+    // happens when I end editing on name
+    @IBAction func finishedEditingName() {
+        
+    }
+    
+    @IBAction func secondButtonAction() {
+        firstTextField.text = "Bob"
+    }
     /*
     TODO one: hook up a button in interface builder to a new function (to be written) in this class. Also hook up the label to this class. When the button is clicked, the function to be written must make a label say ‘hello world!’
     
